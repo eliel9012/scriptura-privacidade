@@ -45,19 +45,25 @@
 
     <div class="card">
       <strong>Resumo.</strong> Não há conta, login, publicidade, rastreamento, analytics nem SDKs de terceiros.
-      Favoritos, destaques, anotações, mesas de estudo e preferências ficam apenas no seu aparelho.
+      Favoritos, destaques, anotações, mesas de estudo, planos de leitura e preferências ficam no seu aparelho.
+      Só se você ligar “Sincronizar com iCloud” eles também vão para o <b>seu</b> iCloud privado, ao qual o desenvolvedor não tem acesso.
     </div>
 
     <h2>Dados que ficam no seu aparelho</h2>
     <ul>
-      <li>Favoritos, destaques, anotações, marcações, histórico de leitura e mesas de estudo, salvos num arquivo local do app.</li>
+      <li>Favoritos, destaques, anotações, marcações, histórico de leitura, mesas de estudo e planos de leitura (com o progresso e a sequência de dias), salvos num arquivo local do app.</li>
       <li>Preferências (tamanho da letra, aparência, interlinear), salvas nas preferências do sistema.</li>
-      <li>O widget lê um resumo do último trecho lido e do versículo do dia por um grupo de apps local (App Group). Nada sai do aparelho.</li>
+      <li>O widget lê um resumo do último trecho lido, do versículo do dia e da leitura de hoje do plano por um grupo de apps local (App Group). Nada sai do aparelho.</li>
     </ul>
     <p>Esses dados entram no backup do aparelho conforme as suas configurações do iCloud/Apple. O desenvolvedor não tem acesso a eles.</p>
 
+    <h2>Sincronização opcional com o seu iCloud</h2>
+    <p>Desligada por padrão. Se você ligar “Sincronizar com iCloud” em Configurações, favoritos, destaques, anotações, marcações, mesas de estudo e planos de leitura são guardados no armazenamento de chave-valor do <b>seu</b> iCloud privado (iCloud Key-Value Storage da Apple), para aparecerem nos seus outros aparelhos com a mesma conta Apple. Esses dados ficam na sua conta, sob a política de privacidade da Apple; o desenvolvedor não tem acesso a eles e não opera nenhum servidor. Desligar a opção para de enviar novas alterações; seus dados continuam no aparelho.</p>
+
     <h2>Recursos que usam o aparelho, não a internet</h2>
     <ul>
+      <li><b>Narração:</b> a leitura em voz alta é gerada no próprio aparelho pelas vozes do sistema (AVSpeechSynthesizer). Nenhum texto ou áudio é enviado para fora.</li>
+      <li><b>Lembrete diário:</b> é uma notificação local agendada no aparelho, no horário que você escolher. A permissão de notificações só é pedida quando você liga o lembrete.</li>
       <li><b>Busca por voz:</b> o reconhecimento de fala roda no próprio aparelho (Speech da Apple). O áudio não é gravado nem enviado ao desenvolvedor. O microfone só é usado quando você toca no botão de voz e autoriza.</li>
       <li><b>Contexto da passagem:</b> gerado pelo modelo de linguagem da Apple que roda no aparelho (Apple Intelligence / Foundation Models).</li>
       <li><b>Leitura em conjunto (SharePlay):</b> quando você inicia uma sessão no FaceTime, a passagem aberta é compartilhada só com os participantes, pela infraestrutura da Apple. Não passa por servidor do desenvolvedor.</li>
@@ -76,10 +82,10 @@
     <p>O app não coleta dados de ninguém, inclusive de crianças.</p>
 
     <h2>Apagar seus dados</h2>
-    <p>Apague as anotações e favoritos dentro do app, ou desinstale o Scriptura: todos os dados locais são removidos junto.</p>
+    <p>Apague as anotações e favoritos dentro do app, ou desinstale o Scriptura: todos os dados locais são removidos junto. Se a sincronização com iCloud estiver ligada, apague os itens dentro do app (a exclusão também sincroniza) ou gerencie o armazenamento do app nos ajustes do iCloud da sua conta Apple.</p>
 
     <h2>Mudanças</h2>
-    <p>Se um recurso futuro mudar algo aqui (por exemplo, sincronização opcional pelo seu iCloud), esta página será atualizada antes, com a data acima.</p>
+    <p>Se um recurso futuro mudar algo aqui, esta página será atualizada antes, com a data acima. Em 21 de novembro de 2026 foram incluídos a narração no aparelho, o lembrete local e a sincronização opcional pelo seu iCloud.</p>
 
     <h2>Texto bíblico</h2>
     <p>Almeida Corrigida Fiel (ACF), © Sociedade Bíblica Trinitariana do Brasil, usada com autorização.</p>
@@ -97,13 +103,17 @@
     <p class="meta">Last updated: November 21, 2026</p>
     <div class="card">
       <strong>Summary.</strong> No account, ads, tracking, analytics or third-party SDKs.
-      Favorites, highlights, notes, study desks and settings stay on your device only.
+      Favorites, highlights, notes, study desks, reading plans and settings stay on your device.
+      Only if you turn on “Sincronizar com iCloud” (Sync with iCloud) are they also stored in <b>your</b> private iCloud, which the developer cannot access.
     </div>
     <ul>
       <li>Your library is stored in a local file and the system preferences; the widget reads a local summary through an App Group.</li>
       <li>Voice search uses Apple's on-device speech recognition; audio is never sent to the developer. The microphone is used only when you tap the voice button and grant access.</li>
       <li>Passage context is generated by Apple's on-device language model.</li>
-      <li>SharePlay shares the open passage only with FaceTime participants, through Apple's infrastructure.</li>
+      <li>SharePlay shares the open passage and highlighted verse only with FaceTime participants, through Apple's infrastructure.</li>
+      <li>Narration (reading aloud) is generated on the device by the system voices; no text or audio leaves it.</li>
+      <li>The daily reading reminder is a local notification scheduled on the device; notification permission is requested only when you turn it on.</li>
+      <li>Optional iCloud sync is off by default. When on, your study data and reading plans are kept in your own private iCloud key-value storage to reach your other devices. It stays in your Apple account under Apple's privacy policy; the developer has no access and runs no server.</li>
       <li>We collect no personal, location, usage or diagnostic data, show no ads and share nothing with third parties.</li>
       <li>Delete your notes in the app, or uninstall it to remove all local data.</li>
     </ul>
